@@ -10,6 +10,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-satoshi: var(--font-satoshi);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +23,66 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-satoshi), Arial, Helvetica, sans-serif;
+}
+
+/* Classes utilitaires pour Satoshi */
+.font-satoshi-light {
+  font-family: var(--font-satoshi);
+  font-weight: 300;
+  font-style: normal;
+}
+
+.font-satoshi-light-italic {
+  font-family: var(--font-satoshi);
+  font-weight: 300;
+  font-style: italic;
+}
+
+.font-satoshi-regular {
+  font-family: var(--font-satoshi);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-satoshi-italic {
+  font-family: var(--font-satoshi);
+  font-weight: 400;
+  font-style: italic;
+}
+
+.font-satoshi-medium {
+  font-family: var(--font-satoshi);
+  font-weight: 500;
+  font-style: normal;
+}
+
+.font-satoshi-medium-italic {
+  font-family: var(--font-satoshi);
+  font-weight: 500;
+  font-style: italic;
+}
+
+.font-satoshi-bold {
+  font-family: var(--font-satoshi);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.font-satoshi-bold-italic {
+  font-family: var(--font-satoshi);
+  font-weight: 700;
+  font-style: italic;
+}
+
+.font-satoshi-black {
+  font-family: var(--font-satoshi);
+  font-weight: 900;
+  font-style: normal;
+}
+
+.font-satoshi-black-italic {
+  font-family: var(--font-satoshi);
+  font-weight: 900;
+  font-style: italic;
 }
