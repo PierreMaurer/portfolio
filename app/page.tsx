@@ -2,7 +2,8 @@ import {Hero} from "@/components/sections/Hero";
 import {Moist} from "@/components/sections/projects/Moist";
 import {Skillsnotation} from "@/components/sections/projects/Skillsnotation";
 import {Lavue} from "@/components/sections/projects/Lavue";
-import {Profil} from "@/components/sections/projects/Profil";
+import {Profil} from "@/components/sections/Profil";
+import {Reviews} from "@/components/sections/Reviews";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
           <Skillsnotation/>
         </div>
       <Profil/>
+      <Reviews/>
     </div>
   );
 }
