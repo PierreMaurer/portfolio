@@ -19,7 +19,7 @@ export const Reviews = () => {
                       />
                   </div>
                   <div className="w-[60%] flex flex-col gap-5">
-                      <p>MyCBDApp</p>
+                      <p className="font-satoshi-medium text-xl">MyCBDApp</p>
                       <p>Je suis très satisfait du travail de pierre qui à su parfaitement comprendre, exécuter et anticiper les tâches que nous lui avons demandé de réaliser. Pierre est une personne pleine de ressources, enthousiaste et sachant faire preuve d&#39;esprit d&#39;équipe et de prise d&#39;initiative.</p>
                   </div>
               </div>
@@ -34,7 +34,7 @@ export const Reviews = () => {
                       />
                   </div>
                   <div className="w-[60%] flex flex-col gap-5">
-                      <p>SIS 67</p>
+                      <p className="font-satoshi-medium text-xl">SIS 67</p>
                       <p>Pierre nous a accompagné dans la mise en place du logiciel LemonLDAP, De bonnes compétences techniques, Le bilan global est positif, et nous lui souhaitons une bonne continuation.</p>
                   </div>
               </div>

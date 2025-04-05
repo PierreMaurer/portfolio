@@ -12,8 +12,8 @@ export const Hero = () => {
           </div>
           <div className="flex flex-row justify-between me-36 mt-52">
               <div className="flex flex-row gap-3">
-                  <button className="text-4xl">
-                      <a href='#'>Book a Call</a>
+                  <button className="text-4xl hover:underline hover:underline-offset-8 ">
+                      <a href='https://calendly.com/maurer-developpement/30min' target="_blank">Book a Call</a>
                   </button>
                   <MoveUpRight />
               </div>

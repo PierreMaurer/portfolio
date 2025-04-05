@@ -18,7 +18,7 @@ export const Profil = () => {
                   />
               </div>
               <div className="w-[55%]">
-                  <p className="text-6xl font-satoshi-light">I am a <strong>fullstack web and mobile</strong> developer specializing in turning your <strong>ambitions</strong> into <strong>reality</strong>.</p>
+                  <p className="text-6xl leading-30 font-satoshi-light">I am a <strong>fullstack web and mobile</strong> developer specializing in turning your <strong>ambitions</strong> into <strong>reality</strong>.</p>
               </div>
           </div>
           <div className="flex flex-row justify-between mt-20 text-2xl">
@@ -29,9 +29,30 @@ export const Profil = () => {
                   </div>
                   <div className="flex flex-row gap-2">
                       <p className="font-medium">Social: </p>
-                      <p>M</p>
-                      <p>LK</p>
-                      <p>X</p>
+                      <div className="w-[28px] h-[28px] relative">
+                          <Image
+                              src={'/img/maltlogo.png'}
+                              alt={'Photo of me'}
+                              fill
+                              style={{objectFit: 'cover'}}
+                          />
+                      </div>
+                      <div className="w-[29px] h-[28px] relative">
+                          <Image
+                              src={'/img/lkLogo.png'}
+                              alt={'Photo of me'}
+                              fill
+                              style={{objectFit: 'cover'}}
+                          />
+                      </div>
+                      <div className="w-[24px] h-[24px] relative">
+                          <Image
+                              src={'/img/xlogo.png'}
+                              alt={'Photo of me'}
+                              width={24}
+                              height={24}
+                          />
+                      </div>
                   </div>
               </div>
               <div className="flex flex-col gap-10">
@@ -54,8 +75,8 @@ export const Profil = () => {
                   <p className="text-6xl">Turn your <strong>ambitions</strong> into <strong>reality</strong></p>
               </div>
               <div className="flex flex-row gap-3 mt-20">
-                  <button className="text-4xl">
-                      <a href='#'>Book a Call</a>
+                  <button className="text-4xl hover:underline hover:underline-offset-8 ">
+                      <a href='https://calendly.com/maurer-developpement/30min' target="_blank">Book a Call</a>
                   </button>
                   <MoveUpRight />
               </div>
