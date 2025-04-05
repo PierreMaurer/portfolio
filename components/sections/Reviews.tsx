@@ -2,9 +2,8 @@ import Image from "next/image";
 
 export const Reviews = () => {
   return (
-      <div className="flex flex-col ms-36 mt-15 me-36 mb-10">
-          <hr/>
-          <div className="text-5xl mt-15">
+      <div className="flex flex-col ms-36 mt-15 me-36 pb-15">
+          <div className="text-5xl">
               <p>Reviews</p>
           </div>
           <div className="flex flex-col gap-36 mt-20">

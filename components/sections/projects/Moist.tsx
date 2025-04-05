@@ -3,11 +3,8 @@ import { MoveUpRight} from 'lucide-react'
 
 export const Moist = () => {
   return (
-      <div className="flex flex-col ms-36 me-36 mt-36 mb-10 h-[200%] bg-[#1C1C1C]">
-          <div>
-              <hr/>
-          </div>
-          <div className="mt-20 flex flex-col gap-8">
+      <div id="project" className="flex flex-col ms-36 me-36 mt-15 mb-10 h-[200%] bg-[#1C1C1C]">
+          <div className="flex flex-col gap-8">
               <div className="flex flex-col gap-8">
                   <p className="text-5xl">Moist</p>
                   <p>2025</p>

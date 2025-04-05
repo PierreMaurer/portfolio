@@ -5,8 +5,8 @@ export const Navbar = () => {
               <p>PIERRE MAURER</p>
           </div>
           <div className="flex flex-row gap-24">
-              <p>PROJECTS</p>
-              <p>ABOUT ME</p>
+              <a href='#project'><p>PROJECTS</p></a>
+              <a href='#profil'><p>ABOUT ME</p></a>
               <p>CONTACT ME</p>
           </div>
           <div>

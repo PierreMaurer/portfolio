@@ -3,7 +3,7 @@ import {MoveUpRight} from "lucide-react";
 
 export const Profil = () => {
   return (
-      <div className="flex flex-col ms-36 me-36 mt-36 mb-10">
+      <div id="profil" className="flex flex-col ms-36 me-36 mt-36 mb-15">
           <div>
               <p className="text-5xl">About me</p>
           </div>

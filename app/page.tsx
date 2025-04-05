@@ -9,6 +9,7 @@ export default function Home() {
   return (
     <div className="bg-[#1C1C1C] scroll-smooth">
       <Hero/>
+      <hr/>
         <div className=" ">
           <Moist/>
         </div>
@@ -19,7 +20,9 @@ export default function Home() {
           <Skillsnotation/>
         </div>
       <Profil/>
+        <hr/>
       <Reviews/>
+      <hr/>
     </div>
   );
 }
