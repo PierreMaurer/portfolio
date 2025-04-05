@@ -17,8 +17,8 @@ export const Profil = () => {
                     className="rounded-3xl"
                   />
               </div>
-              <div className="w-[50%]">
-                  <p className="text-7xl">I am a <strong>fullstack web and mobile</strong> developer specializing in turning your <strong>ambitions</strong> into <strong>reality</strong>.</p>
+              <div className="w-[55%]">
+                  <p className="text-6xl font-satoshi-light">I am a <strong>fullstack web and mobile</strong> developer specializing in turning your <strong>ambitions</strong> into <strong>reality</strong>.</p>
               </div>
           </div>
           <div className="flex flex-row justify-between mt-20 text-2xl">

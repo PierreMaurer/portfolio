@@ -4,7 +4,7 @@ export const Hero = () => {
   return (
       <div className="ms-36 mt-36">
           <div className="text-[40px] w-4/5">
-              <span className="font-satoshi-light">I am a</span> <span className="font-satoshi-medium">fullstack web and mobile</span><span>developer specializing in turning your</span> <span>ambitions</span> <span>into</span> <span>reality.</span>
+              <span className="font-satoshi-light">I am a</span> <span className="font-satoshi-medium">fullstack web and mobile</span><span> developer specializing in turning your</span> <span className="font-satoshi-medium">ambitions</span> <span>into</span> <span className="font-satoshi-medium">reality.</span>
           </div>
           <div className="mt-22">
               <p className="text-[126px]">Fullstack Developer</p>
