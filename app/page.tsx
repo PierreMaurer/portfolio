@@ -7,22 +7,25 @@ import {Reviews} from "@/components/sections/Reviews";
 
 export default function Home() {
   return (
-    <div className="bg-[#1C1C1C] scroll-smooth">
+    <div className="bg-[#1C1C1C] scroll-smooth scrollbar-hide">
       <Hero/>
-      <hr/>
-        <div className=" ">
+      <div className="relative">
+        <div className="sticky top-0 z-0">
           <Moist/>
         </div>
-        <div className="">
+        <div className="sticky top-0 z-5">
           <Lavue/>
         </div>
-        <div className="sticky">
+        <div className="sticky top-0 z-10">
           <Skillsnotation/>
         </div>
-      <Profil/>
+      </div>
+      <div className="relative">
+        <Profil/>
         <hr/>
-      <Reviews/>
-      <hr/>
+        <Reviews/>
+        <hr/>
+      </div>
     </div>
   );
 }

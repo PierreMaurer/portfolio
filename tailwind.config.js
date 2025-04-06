@@ -12,6 +12,9 @@ module.exports = {
       spacing: {
         '15': '3.75rem',
       },
+      scrollBehavior: {
+        smooth: 'smooth',
+      },
     },
   },
   plugins: [],
