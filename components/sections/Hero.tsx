@@ -3,7 +3,7 @@ import {MoveDown, MoveUpRight} from 'lucide-react'
 export const Hero = () => {
   return (
       <div className="
-      ms-10
+      ms-10 h-screen
       xl:ms-36 mt-36 mb-15
 
 
@@ -12,7 +12,7 @@ export const Hero = () => {
           text-2xl
           sm:text-3xl
           lg:text-4xl
-          2xl:text-8xl xl:w-4/5
+          2xl:text-5xl xl:w-4/5
 
           ">
               <span className="font-satoshi-light">I am a</span> <span className="font-satoshi-medium">fullstack web and mobile</span><span> developer specializing in turning your</span> <span className="font-satoshi-medium">ambitions</span> <span>into</span> <span className="font-satoshi-medium">reality.</span>
