@@ -15,8 +15,8 @@ export const Lavue = () => {
                       <p className="w-[50%]">Fictional project created for a Brief of the Week. A premium fragrance launch website blending regional storytelling with a clean, elegant design.</p>
                       <p className="w-[30%]">Web Development • 3D </p>
                   </div>
-                  <div className="mt-2 flex flex-row gap-2">
-                      <a href="https://botw-lavue.vercel.app/" target="_blank">
+                  <div>
+                      <a className="mt-2 flex flex-row gap-2" href="https://botw-lavue.vercel.app/" target="_blank">
                       <p className="text-2xl">See the project</p>
                       <MoveUpRight /></a>
                   </div>

@@ -15,8 +15,8 @@ export const Moist = () => {
                       <p className="w-[50%]">Fictional project created for a Brief of the Week. Promotional website for a summer collection of three new canned drinks, featuring a fresh and playful design aimed at a young audience.</p>
                       <p className="w-[30%]">Web Development • 3D </p>
                   </div>
-                  <div className="mt-2 flex flex-row gap-2">
-                      <a href="https://moist-botw.vercel.app/" target="_blank">
+                  <div>
+                      <a className="mt-2 flex flex-row gap-2" href="https://moist-botw.vercel.app/" target="_blank">
                       <p className="text-2xl">See the project</p>
                       <MoveUpRight />
                       </a>
