@@ -16,8 +16,9 @@ export const Lavue = () => {
                       <p className="w-[30%]">Web Development • 3D </p>
                   </div>
                   <div className="mt-2 flex flex-row gap-2">
+                      <a href="https://botw-lavue.vercel.app/" target="_blank">
                       <p className="text-2xl">See the project</p>
-                      <MoveUpRight />
+                      <MoveUpRight /></a>
                   </div>
                   <div className="w-full flex flex-col items-center mt-2">
 
