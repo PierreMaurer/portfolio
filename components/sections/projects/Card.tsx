@@ -5,8 +5,7 @@ import {ScrollTrigger} from "gsap/ScrollTrigger";
 import {ReactLenis, useLenis} from "lenis/react"
 import {useGSAP} from "@gsap/react";
 import {useRef} from "react";
-import dynamic from "next/dynamic";
-const ReactPlayer = dynamic(() => import("react-player"), { ssr: false});
+
 
 export const Card = () => {
     const lenis = useLenis(({scroll}) => {});
@@ -100,15 +99,14 @@ export const Card = () => {
                                 <p>Lavue</p>
                                 <a href="https://botw-lavue.vercel.app/" target="_blank"><p>See the project</p></a>
                             </div>
-                            <ReactPlayer
-                                url={'https://vimeo.com/1070861527/3f725a319d'}
-                                controls={false}
-                                loop={true}
-                                autoPlay={true}
-                                playing
-                                muted
-                                width="100%"
-                                height="100%" />
+                            <img
+                                src="/img/lavue.png"
+                                alt="Lavue"
+                                className=""/>
+                            <div className="tagBottom">
+                                <p>Lavue</p>
+                                <a href="https://botw-lavue.vercel.app/" target="_blank"><p>See the project</p></a>
+                            </div>
                         </div>
                         <div className="card">
                             <div className="tag ">

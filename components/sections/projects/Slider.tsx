@@ -108,8 +108,7 @@ export const Slider = () => {
                                             autoPlay={true}
                                             playing
                                             muted
-                                            width="100%"
-                                            height="100%" />
+                                        classname="VideoPlayer"/>
                                     ) : (
                                         <div className="relative w-full h-full">
                                             <Image
