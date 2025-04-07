@@ -84,7 +84,7 @@ export const Slider = () => {
                             </div>
 
                             <div className="relative flex-1 w-full">
-                                <div className="absolute bottom-0 mb-5 text-white z-50 flex flex-row justify-between w-[90%] left-[5%]">
+                                <div className="absolute bottom-0 mb-5 text-white bg-black z-50 flex flex-row justify-between w-[90%] left-[5%] items-center">
                                     <div className="flex flex-row">
                                         <a href={project.url} target="_blank"><p className="!text-lg font-satoshi-light">See the project</p></a>
                                         <MoveUpRight />
@@ -108,8 +108,7 @@ export const Slider = () => {
                                             autoPlay={true}
                                             playing
                                             muted
-                                            width="100%"
-                                            height="100%" />
+                                        classname="VideoPlayer"/>
                                     ) : (
                                         <div className="relative w-full h-full">
                                             <Image
