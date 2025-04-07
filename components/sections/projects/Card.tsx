@@ -2,13 +2,12 @@
 import gsap from "gsap"
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 
-import {ReactLenis, useLenis} from "lenis/react"
+import {ReactLenis} from "lenis/react"
 import {useGSAP} from "@gsap/react";
 import {useRef} from "react";
 
 
 export const Card = () => {
-    const lenis = useLenis(({scroll}) => {});
     const container = useRef(null);
     useGSAP(
         () => {
