@@ -3,11 +3,13 @@ import dynamic from "next/dynamic"
 import {useEffect, useRef, useState} from "react";
 import {projects} from "@/components/sections/projects/projects";
 import gsap from "gsap";
+import { MoveUpRight } from "lucide-react";
+import Image from "next/image";
 
 
 const ReactPlayer = dynamic(() => import("react-player"), { ssr: false});
 export const Slider = () => {
-    const sliderRef = useRef(null);
+    const sliderRef = useRef<HTMLDivElement>(null);
     const [isAnimating, setIsAnimating] = useState<boolean>(false);
     const [isClient, setIsClient] = useState<boolean>(false);
 
@@ -19,11 +21,12 @@ export const Slider = () => {
         if (isClient && sliderRef.current) {
             initializeCards()
         }
-    }, [isClient, sliderRef])
+    }, [isClient])
 
     const initializeCards = () => {
+        if (!sliderRef.current) return;
         const cards = Array.from(sliderRef.current.querySelectorAll(".card"));
-            gsap.to(cards, {
+        gsap.to(cards, {
             y: (i) => 0 + 20 * i + "%",
             z: (i) => 15 * i,
             duration: 1,
@@ -33,11 +36,13 @@ export const Slider = () => {
     }
 
     const handleClick = () => {
-        if (isAnimating) return;
+        if (isAnimating || !sliderRef.current) return;
         setIsAnimating(true);
         const slider = sliderRef.current;
         const cards = Array.from(slider.querySelectorAll(".card"));
         const lastCard = cards.pop();
+        if (!lastCard) return;
+
         gsap.to(lastCard, {
             y: "+=150%",
             duration: 0.75,
@@ -78,16 +83,44 @@ export const Slider = () => {
                                 </div>
                             </div>
 
-                            <div className="image-player">
-                                <ReactPlayer
-                                    url={'https://vimeo.com/1070861527/3f725a319d'}
-                                    controls={false}
-                                    loop={true}
-                                    autoPlay={true}
-                                    playing
-                                    muted
-                                    width="100%"
-                                    height="100%" />
+                            <div className="relative flex-1 w-full">
+                                <div className="absolute bottom-0 mb-5 text-white z-50 flex flex-row justify-between w-[90%] left-[5%]">
+                                    <div className="flex flex-row">
+                                        <a href={project.url} target="_blank"><p className="!text-lg font-satoshi-light">See the project</p></a>
+                                        <MoveUpRight />
+                                    </div>
+                                    <div>
+                                        <p>{project.description}</p>
+                                    </div>
+                                    <div>
+                                        <p>{project.competencies}</p>
+                                    </div>
+                                </div>
+                                <div className="image-player h-full relative" onClick={(e) => {
+                                    e.stopPropagation();
+                                    handleClick();
+                                }}>
+                                    {project.video ? (
+                                        <ReactPlayer
+                                            url={'https://vimeo.com/1070861527/3f725a319d'}
+                                            controls={false}
+                                            loop={true}
+                                            autoPlay={true}
+                                            playing
+                                            muted
+                                            width="100%"
+                                            height="100%" />
+                                    ) : (
+                                        <div className="relative w-full h-full">
+                                            <Image
+                                                src={project.urlImage}
+                                                alt={"Screen Skillsnotation"}
+                                                fill
+                                                style={{objectFit: 'contain'}}
+                                            />
+                                        </div>
+                                    )}
+                                </div>
                             </div>
                         </div>
                     ))}
