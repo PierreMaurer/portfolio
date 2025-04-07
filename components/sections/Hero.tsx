@@ -3,8 +3,8 @@ import {MoveDown, MoveUpRight} from 'lucide-react'
 export const Hero = () => {
   return (
       <div className="
-      ms-10 h-screen
-      xl:ms-36 mt-36 mb-30
+      ms-10
+      xl:ms-36 mt-36 mb-10
 
 
       ">
