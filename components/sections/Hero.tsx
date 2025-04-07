@@ -4,7 +4,7 @@ export const Hero = () => {
   return (
       <div className="
       ms-10 h-screen
-      xl:ms-36 mt-36 mb-15
+      xl:ms-36 mt-36 mb-30
 
 
       ">
