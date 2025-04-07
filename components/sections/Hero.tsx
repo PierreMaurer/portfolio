@@ -4,7 +4,7 @@ export const Hero = () => {
   return (
       <div className="
       ms-10
-      xl:ms-36 mt-36 mb-10
+      xl:ms-36 mt-36
 
 
       ">
