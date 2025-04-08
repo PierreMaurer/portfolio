@@ -1,7 +1,6 @@
 "use client"
 import {Hero} from "@/components/sections/Hero";
 import {Profil} from "@/components/sections/Profil";
-import {Reviews} from "@/components/sections/Reviews";
 import {Card} from "@/components/sections/projects/Card";
 
 export default function Home() {
