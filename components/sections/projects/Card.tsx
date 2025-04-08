@@ -86,25 +86,29 @@ export const Card = () => {
                         <div className="card">
                             <div className="tag ">
                                 <p>MOIST</p>
-                                <a href="https://moist-botw.vercel.app/" target="_blank"><p>See the project</p></a>
+                                <a href="https://moist-botw.vercel.app/" target="_blank"><p className="underline underline-offset-2">See the project</p></a>
                             </div>
                             <img
                                 src="/img/moist.png"
                                 alt="Moist"
                             className=""/>
+                            <div className="tagBottom">
+                                <p>Fictional project. Promo site for three summer canned drinks with a fresh, playful design for a young audience.</p>
+                                <p>Web Development • 3D</p>
+                            </div>
                         </div>
                         <div className="card">
                             <div className="tag ">
                                 <p>Lavue</p>
-                                <a href="https://botw-lavue.vercel.app/" target="_blank"><p>See the project</p></a>
+                                <a href="https://botw-lavue.vercel.app/" target="_blank"><p className="underline underline-offset-2">See the project</p></a>
                             </div>
                             <img
                                 src="/img/lavue.png"
                                 alt="Lavue"
                                 className=""/>
                             <div className="tagBottom">
-                                <p>Lavue</p>
-                                <a href="https://botw-lavue.vercel.app/" target="_blank"><p>See the project</p></a>
+                                <p>Fictional project created for a Brief of the Week. A premium fragrance launch website blending regional storytelling with a clean, elegant design.</p>
+                                <p>Web Development • 3D</p>
                             </div>
                         </div>
                         <div className="card">
@@ -115,6 +119,10 @@ export const Card = () => {
                                 src="/img/skillsnotation1.png"
                                 alt="Moist"
                                 className=""/>
+                            <div className="tagBottom">
+                                <p>SkillsNotation is Web and mobile app to evaluate the competencies of firefighter during training session</p>
+                                <p>Web Design • Web Development • Mobile • Backend</p>
+                            </div>
                         </div>
                     </div>
                 </section>
