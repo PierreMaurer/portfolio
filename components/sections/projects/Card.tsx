@@ -101,29 +101,6 @@ export const Card = () => {
                         </div>
                         <div className="card">
                             <div className="tag ">
-                                <p>Lavue</p>
-                                <a href="https://botw-lavue.vercel.app/" target="_blank"><p className="underline underline-offset-2">See the project</p></a>
-                            </div>
-                            <div className="videoPlayer" style={{ width: '100%', height: '100%', position: 'relative' }}>
-                            <ReactPlayer
-                                url={'https://vimeo.com/1070861527/3f725a319d'}
-                                controls={false}
-                                loop={true}
-                                autoPlay={true}
-                                playing
-                                height="100%"
-                                width="100%"
-                                muted
-                                style={{ position: 'absolute', top: 0, left: 0 }}
-                                />
-                            </div>
-                            <div className="tagBottom">
-                                <p>Fictional project created for a Brief of the Week. A premium fragrance launch website blending regional storytelling with a clean, elegant design.</p>
-                                <p>Web Development • 3D</p>
-                            </div>
-                        </div>
-                        <div className="card">
-                            <div className="tag ">
                                 <p>SkillsNotation</p>
                             </div>
                             <img
@@ -133,6 +110,29 @@ export const Card = () => {
                             <div className="tagBottom">
                                 <p>SkillsNotation is Web and mobile app to evaluate the competencies of firefighter during training session</p>
                                 <p>Web Design • Web Development • Mobile • Backend</p>
+                            </div>
+                        </div>
+                        <div className="card">
+                            <div className="tag ">
+                                <p>Lavue</p>
+                                <a href="https://botw-lavue.vercel.app/" target="_blank"><p className="underline underline-offset-2">See the project</p></a>
+                            </div>
+                            <div className="videoPlayer" style={{ width: '100%', height: '100%', position: 'relative' }}>
+                                <ReactPlayer
+                                    url={'https://vimeo.com/1070861527/3f725a319d'}
+                                    controls={false}
+                                    loop={true}
+                                    autoPlay={true}
+                                    playing
+                                    height="100%"
+                                    width="100%"
+                                    muted
+                                    style={{ position: 'absolute', top: 0, left: 0 }}
+                                />
+                            </div>
+                            <div className="tagBottom">
+                                <p>Fictional project created for a Brief of the Week. A premium fragrance launch website blending regional storytelling with a clean, elegant design.</p>
+                                <p>Web Development • 3D</p>
                             </div>
                         </div>
                     </div>
