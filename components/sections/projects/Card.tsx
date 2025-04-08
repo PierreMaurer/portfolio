@@ -5,7 +5,9 @@ import {ScrollTrigger} from "gsap/ScrollTrigger";
 import {ReactLenis} from "lenis/react"
 import {useGSAP} from "@gsap/react";
 import {useRef} from "react";
+import dynamic from "next/dynamic";
 
+const ReactPlayer = dynamic(() => import("react-player"), { ssr: false});
 
 export const Card = () => {
     const container = useRef(null);
@@ -102,10 +104,19 @@ export const Card = () => {
                                 <p>Lavue</p>
                                 <a href="https://botw-lavue.vercel.app/" target="_blank"><p className="underline underline-offset-2">See the project</p></a>
                             </div>
-                            <img
-                                src="/img/lavue.png"
-                                alt="Lavue"
-                                className=""/>
+                            <div className="videoPlayer" style={{ width: '100%', height: '100%', position: 'relative' }}>
+                            <ReactPlayer
+                                url={'https://vimeo.com/1070861527/3f725a319d'}
+                                controls={false}
+                                loop={true}
+                                autoPlay={true}
+                                playing
+                                height="100%"
+                                width="100%"
+                                muted
+                                style={{ position: 'absolute', top: 0, left: 0 }}
+                                />
+                            </div>
                             <div className="tagBottom">
                                 <p>Fictional project created for a Brief of the Week. A premium fragrance launch website blending regional storytelling with a clean, elegant design.</p>
                                 <p>Web Development • 3D</p>

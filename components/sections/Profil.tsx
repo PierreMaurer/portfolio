@@ -70,17 +70,6 @@ export const Profil = () => {
                   </div>
               </div>
           </div>
-          <div className="mt-40">
-              <div>
-                  <p className="text-6xl">Turn your <strong>ambitions</strong> into <strong>reality</strong></p>
-              </div>
-              <div className="flex flex-row gap-3 mt-20">
-                  <button className="text-4xl hover:underline hover:underline-offset-8 ">
-                      <a href='https://calendly.com/maurer-developpement/30min' target="_blank">Book a Call</a>
-                  </button>
-                  <MoveUpRight />
-              </div>
-          </div>
       </div>
   )
 }

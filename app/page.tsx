@@ -12,8 +12,6 @@ export default function Home() {
           <Card/>
         <Profil/>
         <hr/>
-        <Reviews/>
-        <hr/>
       </div>
     </div>
   );
