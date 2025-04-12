@@ -3,10 +3,10 @@ import {MoveUpRight} from "lucide-react";
 export const Footer = () => {
   return (
       <div className="h-[270px] mt-15">
-          <div className="flex flex-row justify-between mt-5 ms-36 me-[100px]">
+          <div className="flex flex-col lg:flex-row justify-between ms-10 me-10 lg:ms-36 lg:me-36 me-[100px]">
               <div>
                   <div>
-                    <p className="text-6xl font-satoshi-light">Turn your <span className="font-satoshi-medium">ambitions</span> into <span className="font-satoshi-medium">reality</span></p>
+                    <p className="text-4xl lg:text-6xl font-satoshi-light">Turn your <span className="font-satoshi-medium">ambitions</span> into <span className="font-satoshi-medium">reality</span></p>
                   </div>
                   <div className="flex flex-row gap-3 mt-10">
                       <button className="text-4xl hover:underline hover:underline-offset-8 ">

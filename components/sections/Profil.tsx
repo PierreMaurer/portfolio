@@ -2,12 +2,12 @@ import Image from "next/image";
 
 export const Profil = () => {
   return (
-      <div id="profil" className="flex flex-col ms-36 me-36 mt-36 mb-15">
+      <div id="profil" className="flex flex-col ms-10 me-10 lg:ms-36 lg:me-36 mt-36 mb-15">
           <div>
-              <p className="text-5xl">About me</p>
+              <p className="text-3xl lg:text-5xl">About me</p>
           </div>
-          <div className="flex flex-row gap-36 mt-20">
-              <div className="w-[450px] h-[600px] relative">
+          <div className="flex flex-col lg:flex-row gap-20 lg:gap-36 mt-20">
+              <div className="w-full lg:w-[450px] h-[300px] lg:h-[600px] relative">
                   <Image
                     src={'/img/me.png'}
                     alt={'Photo of me'}
@@ -16,13 +16,13 @@ export const Profil = () => {
                     className="rounded-3xl"
                   />
               </div>
-              <div className="w-[55%]">
-                  <p className="text-6xl leading-30 font-satoshi-light">I am a <strong>fullstack web and mobile</strong> developer specializing in turning your <strong>ambitions</strong> into <strong>reality</strong>.</p>
+              <div className="lg:w-[55%]">
+                  <p className="text-xl lg:text-6xl leading-10 font-satoshi-light">I am a <strong>fullstack web and mobile</strong> developer specializing in turning your <strong>ambitions</strong> into <strong>reality</strong>.</p>
               </div>
           </div>
-          <div className="flex flex-row justify-between mt-20 text-2xl">
-              <div className="flex flex-col justify-between">
-                  <div className="flex flex-row gap-2">
+          <div className="flex flex-col gap-20 lg:gap-36 lg:flex-row justify-between mt-20 text-2xl">
+              <div className="flex flex-col gap-20 justify-between">
+                  <div className="flex flex-col lg:flex-row gap-2">
                       <p className="font-medium">Contact :</p>
                       <p>contact@maurer-developpement.fr</p>
                   </div>
@@ -55,15 +55,15 @@ export const Profil = () => {
                   </div>
               </div>
               <div className="flex flex-col gap-10">
-                  <div className="flex flex-row gap-2">
+                  <div className="flex flex-col lg:flex-row gap-2">
                       <p className="font-medium">Front end :</p>
                       <p>React • Tailwind • ThreeJS • NextJS • Angular</p>
                   </div>
-                  <div className="flex flex-row gap-2">
+                  <div className="flex flex-col lg:flex-row gap-2">
                       <p className="font-medium">Back end :</p>
                       <p>Javascript • NestJS • SQL  • Postgres • Prisma</p>
                   </div>
-                  <div className="flex flex-row gap-2">
+                  <div className="flex flex-col lg:flex-row gap-2">
                       <p className="font-medium">Other :</p>
                       <p>React Native • Figma • SEO</p>
                   </div>

@@ -34,7 +34,7 @@ export const Reviews = () => {
                   </div>
                   <div className="w-[60%] flex flex-col gap-5">
                       <p className="font-satoshi-medium text-xl">SIS 67</p>
-                      <p>Pierre nous a accompagné dans la mise en place du logiciel LemonLDAP, De bonnes compétences techniques, Le bilan global est positif, et nous lui souhaitons une bonne continuation.</p>
+                      <p>Pierre nous a accompagné dans la mise en place du logiciel LemonLDAP, De bonnes compétences techniques,Le bilan global est positif, et nous lui souhaitons une bonne continuation.</p>
                   </div>
               </div>
           </div>
