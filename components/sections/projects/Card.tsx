@@ -109,21 +109,37 @@ export const Card = () => {
                             </div>
                         </div>
                         <div className="card">
-                            <div className="tag ">
+                            <div className="tag">
                                 <p>Lavue</p>
                                 <a href="https://botw-lavue.vercel.app/" target="_blank"><p className="underline underline-offset-2">See the project</p></a>
                             </div>
-                            <div className="videoPlayer" style={{ width: '100%', height: '100%', position: 'relative' }}>
+                            <div className="videoPlayer">
                                 <ReactPlayer
                                     url={'https://vimeo.com/1070861527/3f725a319d'}
                                     controls={false}
                                     loop={true}
                                     autoPlay={true}
                                     playing
-                                    height="100%"
                                     width="100%"
+                                    height="100%"
+                                    config={{
+                                        vimeo: {
+                                            playerOptions: {
+                                                responsive: true,
+                                                background: true,
+                                                quality: 'auto'
+                                            }
+                                        }
+                                    }}
+                                    style={{
+                                        position: 'absolute',
+                                        top: 0,
+                                        left: 0,
+                                        width: '100%',
+                                        height: '100%',
+                                        objectFit: 'cover'
+                                    }}
                                     muted
-                                    style={{ position: 'absolute', top: 0, left: 0 }}
                                 />
                             </div>
                             <div className="tagBottom">
