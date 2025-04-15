@@ -16,13 +16,9 @@ export const Card = () => {
             gsap.registerPlugin(ScrollTrigger);
             const cards = document.querySelectorAll(".card");
             const images = document.querySelectorAll(".card img");
-            console.log(cards, images)
             const totalCards = cards.length;
-            console.log("NOMBRE", totalCards)
-
             gsap.set(cards[0], {y: "0%", scale: 1, rotation: 0});
             gsap.set(images[0], {scale: 1});
-
             for (let i = 1; i < totalCards; i++ ) {
                 gsap.set(cards[i], {y: "100%", scale: 1, rotation: 0});
                 gsap.set(images[i], {scale: 1});
