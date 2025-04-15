@@ -17,7 +17,7 @@ export const Profil = () => {
                   />
               </div>
               <div className="lg:w-[55%]">
-                  <p className="text-xl lg:text-6xl leading-20 font-satoshi-light">I am a <strong>fullstack web and mobile</strong> developer specializing in turning your <strong>ambitions</strong> into <strong>reality</strong>.</p>
+                  <p className="text-xl lg:text-6xl leading-20 font-satoshi-light">As a <span className="font-satoshi-medium">fullstack developer</span>, I design and build <span className="font-satoshi-medium">modern web & mobile</span> applications with a strong focus on <span className="font-satoshi-medium">performance</span> and <span className="font-satoshi-medium">user experience</span>.</p>
               </div>
           </div>
           <div className="flex flex-col gap-20 lg:gap-36 lg:flex-row justify-between mt-20 text-2xl">
