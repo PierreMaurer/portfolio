@@ -1,11 +1,9 @@
 "use client"
 import gsap from "gsap"
 import {ScrollTrigger} from "gsap/ScrollTrigger";
-
 import {ReactLenis} from "lenis/react"
 import {useGSAP} from "@gsap/react";
 import {useEffect, useRef} from "react";
-import dynamic from "next/dynamic";
 
 export const Card = () => {
     const container = useRef(null);
