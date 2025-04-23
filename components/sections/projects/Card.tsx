@@ -4,13 +4,26 @@ import {ScrollTrigger} from "gsap/ScrollTrigger";
 
 import {ReactLenis} from "lenis/react"
 import {useGSAP} from "@gsap/react";
-import {useRef} from "react";
+import {useEffect, useRef} from "react";
 import dynamic from "next/dynamic";
-
-const ReactPlayer = dynamic(() => import("react-player"), { ssr: false});
 
 export const Card = () => {
     const container = useRef(null);
+    const videoRef = useRef<HTMLVideoElement>(null);
+
+    useEffect(() => {
+        const video = videoRef.current;
+        if (!video) return;
+
+        video.play().catch(error => {
+            console.log("Erreur de lecture vidéo:", error);
+        });
+
+        return () => {
+            video.pause();
+            video.src = '';
+        };
+    }, []);
     useGSAP(
         () => {
             gsap.registerPlugin(ScrollTrigger);
@@ -37,7 +50,6 @@ export const Card = () => {
             for (let i = 0; i < totalCards - 1; i++) {
                 const currentCard = cards[i];
                 const currentImage = images[i];
-                console.log(cards[i + 1]);
                 const nextCard = cards[i + 1];
                 const position = i;
 
@@ -108,43 +120,26 @@ export const Card = () => {
                                 <p>Web Design • Web Development • Mobile • Backend</p>
                             </div>
                         </div>
-                        <div className="card">
+                        <div id="lavue" className="card">
                             <div className="tag">
                                 <p>Lavue</p>
                                 <a href="https://botw-lavue.vercel.app/" target="_blank"><p className="underline underline-offset-2">See the project</p></a>
                             </div>
                             <div className="videoPlayer">
-                                <ReactPlayer
-                                    url={'https://vimeo.com/1070861527/3f725a319d'}
-                                    controls={false}
-                                    loop={true}
-                                    autoPlay={true}
-                                    playing
-                                    width="100%"
-                                    height="100%"
-                                    config={{
-                                        vimeo: {
-                                            playerOptions: {
-                                                responsive: true,
-                                                background: true,
-                                                quality: 'auto'
-                                            }
-                                        }
-                                    }}
-                                    style={{
-                                        position: 'absolute',
-                                        top: 0,
-                                        left: 0,
-                                        width: '100%',
-                                        height: '100%',
-                                        objectFit: 'cover'
-                                    }}
+                                <video
+                                    ref={videoRef}
+                                    className="absolute top-0 left-0 w-full h-full object-cover"
+                                    playsInline
                                     muted
-                                />
+                                    loop
+                                    autoPlay
+                                >
+                                    <source src="/HERO.mp4" type="video/mp4" />
+                                </video>
                             </div>
                             <div className="tagBottom">
-                                <p>Fictional project created for a Brief of the Week. A premium fragrance launch website blending regional storytelling with a clean, elegant design.</p>
-                                <p>Web Development • 3D</p>
+                                <p className="w-[50%]">Fictional project created for a Brief of the Week. A premium fragrance launch website blending regional storytelling with a clean, elegant design.</p>
+                                <p>Web Design • Web Development • Mobile • Backend</p>
                             </div>
                         </div>
                     </div>
