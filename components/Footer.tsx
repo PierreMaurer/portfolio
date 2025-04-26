@@ -16,10 +16,10 @@ export const Footer = () => {
                   </div>
                   <div className="flex flex-col md:flex-row justify-between mt-14 pb-2">
                       <div className="flex flex-row gap-5 opacity-65">
-                          <a href="https://www.linkedin.com/in/pierre-maurer/" target="_blank"><p>Linkedin</p></a>
-                          <a href="https://x.com/PierreMaurer_" target="_blank"><p>Twitter</p></a>
-                          <a href="https://www.malt.fr/profile/pierremaurer" target="_blank"><p>Malt</p></a>
-                          <p>CGU</p>
+                          <a href="https://www.linkedin.com/in/pierre-maurer/" target="_blank"><button>Linkedin</button></a>
+                          <a href="https://x.com/PierreMaurer_" target="_blank"><button>Twitter</button></a>
+                          <a href="https://www.malt.fr/profile/pierremaurer" target="_blank"><button>Malt</button></a>
+                          <a><button>CGU</button></a>
                       </div>
                       <div className="">
                           <p className="opacity-60">© Pierre Maurer – Tous droits réservés – 2025</p>

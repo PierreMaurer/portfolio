@@ -38,13 +38,14 @@ export const Hero = () => {
 
           ">
               <div className="flex flex-row gap-3">
-                  <button className="
-                  hover:underline hover:underline-offset-8 text-xl
-                  sm:text-3xl
-                  xl:text-4xl ">
+                  <div>
+                  <button className="text-4xl hover:underline hover:underline-offset-8">
                       <a href='https://calendly.com/maurer-developpement/30min' target="_blank">Book a Call</a>
                   </button>
-                  <MoveUpRight />
+              </div>
+                  <div>
+                    <MoveUpRight />
+                  </div>
               </div>
               <div className="flex flex-row gap-3
 

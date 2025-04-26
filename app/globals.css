@@ -98,14 +98,6 @@ body {
   font-weight: 900;
   font-style: italic;
 }
-section {
-  position: relative;
-  width: 100vw;
-  height: 100svh;
-  padding: 2em;
-  background-color: #1C1C1C;
-  overflow: hidden;
-}
 
 .sticky-cards {
   display: flex;
@@ -113,6 +105,12 @@ section {
   align-items: center;
   background-color: #1C1C1C;
   color: #fff;
+  position: relative;
+  width: 100vw;
+  height: 100svh;
+  padding: 2em;
+  background-color: #1C1C1C;
+  overflow: hidden;
 }
 
 .card-container {
@@ -182,7 +180,7 @@ section {
   .tagBottom {
     flex-direction: column;
     gap: 0.5em;
-  } 
+  }
   .tag p, .tagBottom p {
     font-size: 10px;
     padding: 0.5em;

@@ -5,9 +5,9 @@ export const Navbar = () => {
               <p className="text-sm">PIERRE MAURER</p>
           </div>
           <div className="flex flex-row gap-5 lg:gap-24 text-sm">
-              <a href='#project'><p>PROJECTS</p></a>
-              <a href='#profil'><p>ABOUT ME</p></a>
-              <p>CONTACT ME</p>
+              <a href='#project'><button className="hover:underline hover:underline-offset-8 ">PROJECTS</button></a>
+              <a href='#profil'><button className="hover:underline hover:underline-offset-8 ">ABOUT ME</button></a>
+              <a href='https://calendly.com/maurer-developpement/30min' target="_blank"><button className="hover:underline hover:underline-offset-8 ">CONTACT ME</button></a>
           </div>
       </div>
   )
