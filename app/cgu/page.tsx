@@ -19,7 +19,7 @@ export default function CGU () {
 
                 <section>
                     <h2 className="text-2xl font-bold mb-4">3. Website Access</h2>
-                    <p>The website is freely accessible to anyone with internet access. All related costs (hardware, internet connection, etc.) are the user's responsibility.</p>
+                    <p>The website is freely accessible to anyone with internet access. All related costs (hardware, internet connection, etc.) are the user&apos;s responsibility.</p>
                     <p>The website may be temporarily unavailable due to maintenance.</p>
                 </section>
 
@@ -30,7 +30,7 @@ export default function CGU () {
 
                 <section>
                     <h2 className="text-2xl font-bold mb-4">5. Liability</h2>
-                    <p>Pierre Maurer cannot be held liable for any inaccuracies, errors, or interruptions in the website's availability. External links are provided for informational purposes only, without liability for their content.</p>
+                    <p>Pierre Maurer cannot be held liable for any inaccuracies, errors, or interruptions in the website&apos;s availability. External links are provided for informational purposes only, without liability for their content.</p>
                 </section>
 
                 <section>
