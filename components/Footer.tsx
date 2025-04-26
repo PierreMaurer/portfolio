@@ -19,7 +19,8 @@ export const Footer = () => {
                           <a href="https://www.linkedin.com/in/pierre-maurer/" target="_blank"><button>Linkedin</button></a>
                           <a href="https://x.com/PierreMaurer_" target="_blank"><button>Twitter</button></a>
                           <a href="https://www.malt.fr/profile/pierremaurer" target="_blank"><button>Malt</button></a>
-                          <a><button>CGU</button></a>
+                          <a href="/cgu"><button>CGU</button></a>
+                          <a href="/legal"><button>Legal Mentions</button></a>
                       </div>
                       <div className="">
                           <p className="opacity-60">© Pierre Maurer – Tous droits réservés – 2025</p>
