@@ -22,7 +22,7 @@ export const Profil = () => {
           </div>
           <div className="flex flex-col gap-20 lg:gap-36 lg:flex-row justify-between mt-20 text-2xl">
               <div className="flex flex-col gap-20 justify-between">
-                  <div className="flex flex-col lg:flex-row gap-2">
+                  <div className="flex flex-col lg:flex-row gap-2 text-xl">
                     <p><span className="font-medium">Contact : </span>contact@maurer-developpement.fr</p>
                   </div>
                   <div className="flex flex-row gap-5">
@@ -60,7 +60,7 @@ export const Profil = () => {
                   </div>
               </div>
               <div className="flex flex-col gap-10">
-                  <div className="flex flex-col lg:flex-row gap-2">
+                  <div className="flex flex-col lg:flex-row gap-2 text-xl">
                       <p><span className="font-medium">Front end :</span> React • Tailwind • ThreeJS • NextJS • Angular</p>
                   </div>
                   <div className="flex flex-col lg:flex-row gap-2">

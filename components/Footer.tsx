@@ -6,10 +6,10 @@ export const Footer = () => {
           <div className="flex flex-col lg:flex-row justify-between ms-10 me-10 lg:ms-36 lg:me-36">
               <div className="w-full">
                   <div>
-                    <p className="text-4xl lg:text-6xl font-satoshi-light">Turn your <span className="font-satoshi-medium">ambitions</span> into <span className="font-satoshi-medium">reality</span></p>
+                    <p className="text-3xl lg:text-6xl font-satoshi-light">Turn your <span className="font-satoshi-medium">ambitions</span> into <span className="font-satoshi-medium">reality</span></p>
                   </div>
                   <div className="flex flex-row gap-3 mt-10">
-                      <button className="text-4xl hover:underline hover:underline-offset-8 ">
+                      <button className="text-2xl lg:text-4xl hover:underline hover:underline-offset-8 ">
                           <a href='https://calendly.com/maurer-developpement/30min' target="_blank">Book a Call</a>
                       </button>
                       <MoveUpRight />

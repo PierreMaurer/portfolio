@@ -31,7 +31,7 @@ export const Card = () => {
             gsap.set(cards[0], {y: "0%", scale: 1, rotation: 0});
             gsap.set(images[0], {scale: 1});
             for (let i = 1; i < totalCards; i++ ) {
-                gsap.set(cards[i], {y: "100%", scale: 1, rotation: 0});
+                gsap.set(cards[i], {y: "120%", scale: 1, rotation: 0});
                 gsap.set(images[i], {scale: 1});
             }
 
@@ -49,35 +49,36 @@ export const Card = () => {
                 const currentCard = cards[i];
                 const currentImage = images[i];
                 const nextCard = cards[i + 1];
-                const position = i;
+                const position = i * 1.2;
+
+                scrollTimeLine.to(
+                    nextCard, {
+                        y: "0%",
+                        duration: 1.2,
+                        ease: "none"
+                    },
+                    position
+                )
 
                 scrollTimeLine.to(
                     currentCard,
                     {
                         scale: 0.5,
                         rotation: 10,
-                        duration: 1,
+                        duration: 1.2,
                         ease: "none",
                     },
-                    position
+                    position + 0.3
                 );
                 scrollTimeLine.to(
                     currentImage,
                     {
                         scale: 1.5,
-                        duration: 1,
+                        duration: 1.2,
                         ease: "none"
                     },
-                    position
+                    position + 0.3
                 );
-                scrollTimeLine.to(
-                    nextCard, {
-                        y: "0%",
-                        duration: 1,
-                        ease: "none"
-                    },
-                    position
-                )
             }
             return () => {
                 scrollTimeLine.kill();
