@@ -8,6 +8,28 @@ import {useEffect, useRef} from "react";
 export const Card = () => {
     const container = useRef(null);
     const videoRef = useRef<HTMLVideoElement>(null);
+    const projects = [
+        { name: "MOIST", id: 0 },
+        { name: "SkillsNotation", id: 1 },
+        { name: "Lavue", id: 2 }
+    ];
+
+    const scrollToProject = (index: number) => {
+        const stickySection = document.querySelector('.sticky-cards');
+        if (!stickySection) return;
+
+        const card = document.querySelector('.card');
+        if (!card) return;
+
+        const cardHeight = card.getBoundingClientRect().height;
+        const sectionTop = stickySection.getBoundingClientRect().top + window.scrollY;
+        const scrollPosition = sectionTop + (cardHeight * index);
+
+        window.scrollTo({
+            top: scrollPosition,
+            behavior: 'smooth'
+        });
+    };
 
     useEffect(() => {
         const video = videoRef.current;
@@ -90,7 +112,7 @@ export const Card = () => {
     return (
         <ReactLenis root>
             <div className="containercards container m-0 p-0 box-border w-full h-full relative" ref={container}>
-                <section className="sticky-cards">
+                <section className="sticky-cards flex flex-col">
                     <div className="card-container">
                         <div className="card">
                             <div className="tag ">
@@ -133,7 +155,7 @@ export const Card = () => {
                                     loop
                                     autoPlay
                                 >
-                                    <source src="/HERO.mp4" type="video/mp4" />
+                                    <source src="/lavue.mov" type="video/mp4" />
                                 </video>
                             </div>
                             <div className="tagBottom">

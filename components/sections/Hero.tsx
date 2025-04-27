@@ -5,6 +5,7 @@ export const Hero = () => {
       <div className="
       ms-10
       xl:ms-36 mt-36
+      pb-2
 
 
       ">
