@@ -133,7 +133,7 @@ export const Card = () => {
                                     loop
                                     autoPlay
                                 >
-                                    <source src="/lavue.mov" type="video/mp4" />
+                                    <source src="/lavue-1.mp4" type="video/mp4" />
                                 </video>
                             </div>
                             <div className="tagBottom">
