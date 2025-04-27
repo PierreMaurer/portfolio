@@ -8,28 +8,6 @@ import {useEffect, useRef} from "react";
 export const Card = () => {
     const container = useRef(null);
     const videoRef = useRef<HTMLVideoElement>(null);
-    const projects = [
-        { name: "MOIST", id: 0 },
-        { name: "SkillsNotation", id: 1 },
-        { name: "Lavue", id: 2 }
-    ];
-
-    const scrollToProject = (index: number) => {
-        const stickySection = document.querySelector('.sticky-cards');
-        if (!stickySection) return;
-
-        const card = document.querySelector('.card');
-        if (!card) return;
-
-        const cardHeight = card.getBoundingClientRect().height;
-        const sectionTop = stickySection.getBoundingClientRect().top + window.scrollY;
-        const scrollPosition = sectionTop + (cardHeight * index);
-
-        window.scrollTo({
-            top: scrollPosition,
-            behavior: 'smooth'
-        });
-    };
 
     useEffect(() => {
         const video = videoRef.current;

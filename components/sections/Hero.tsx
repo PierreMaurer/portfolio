@@ -49,16 +49,14 @@ export const Hero = () => {
                     <MoveUpRight />
                   </div>
               </div>
-              <div className="flex flex-row gap-3
-
-              ">
+              <div className="flex flex-row gap-3 items-center">
                   <button className="opacity-75
                    text-sm
                    sm:text-lg
                   xl:text-xl ">
                       <a href='#'>Scroll to see more</a>
                   </button>
-                  <MoveDown />
+                  <MoveDown className="h-5 w-5" />
               </div>
           </div>
       </div>
