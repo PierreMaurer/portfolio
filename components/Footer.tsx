@@ -14,7 +14,7 @@ export const Footer = () => {
                       </button>
                       <MoveUpRight />
                   </div>
-                  <div className="flex flex-col md:flex-row justify-between mt-14 pb-2">
+                  <div className="flex flex-col md:flex-row justify-between mt-14 pb-2 gap-3">
                       <div className="flex flex-row gap-5 opacity-65">
                           <a href="https://www.linkedin.com/in/pierre-maurer/" target="_blank"><button className="hover:underline hover:underline-offset-8">Linkedin</button></a>
                           <a href="https://x.com/PierreMaurer_" target="_blank"><button className="hover:underline hover:underline-offset-8">Twitter</button></a>
@@ -22,7 +22,7 @@ export const Footer = () => {
                           <a href="/cgu"><button className="hover:underline hover:underline-offset-8">CGU</button></a>
                           <a href="/legal"><button className="hover:underline hover:underline-offset-8">Legal Mentions</button></a>
                       </div>
-                      <div className="">
+                      <div className="text-center">
                           <p className="opacity-60">© Pierre Maurer – All rights reserved – 2025</p>
                       </div>
                   </div>

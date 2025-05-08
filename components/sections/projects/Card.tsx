@@ -108,15 +108,15 @@ export const Card = () => {
                         </div>
                         <div className="card">
                             <div className="tag ">
-                                <p>SkillsNotation</p>
+                                <p>TTA Manager</p>
                             </div>
                             <img
-                                src="/img/skillsnotation1.png"
-                                alt="Moist"
+                                src="/img/ttamanger.png"
+                                alt="TTA Manager"
                                 className=""/>
                             <div className="tagBottom">
-                                <p>SkillsNotation is Web and mobile app to evaluate the competencies of firefighter during training session</p>
-                                <p>Web Design • Web Development • Mobile • Backend</p>
+                                <p>TTA Manager is Web and mobile app to manage administrative task in fire station.</p>
+                                <p>Web Design • Web Development • Backend</p>
                             </div>
                         </div>
                         <div id="lavue" className="card">

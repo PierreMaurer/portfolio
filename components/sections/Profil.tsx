@@ -20,12 +20,12 @@ export const Profil = () => {
                   <p className="text-xl lg:text-5xl leading-20 font-satoshi-light">As a <span className="font-satoshi-medium">fullstack developer</span>, I design and build <span className="font-satoshi-medium">modern web & mobile</span> applications with a strong focus on <span className="font-satoshi-medium">performance</span> and <span className="font-satoshi-medium">user experience</span>.</p>
               </div>
           </div>
-          <div className="flex flex-col gap-20 lg:gap-36 lg:flex-row justify-between mt-20 text-2xl">
+          <div className="flex flex-col gap-20 lg:gap-36 lg:flex-row justify-between mt-20">
               <div className="flex flex-col gap-20 justify-between">
                   <div className="flex flex-col lg:flex-row gap-2 text-xl">
                     <p><span className="font-medium">Contact : </span>contact@maurer-developpement.fr</p>
                   </div>
-                  <div className="flex flex-row gap-5">
+                  <div className="flex flex-row gap-5 text-xl">
                       <p className="font-medium">Social: </p>
                       <div className="w-[28px] h-[28px] relative">
                           <a href="https://www.malt.fr/profile/pierremaurer" target="_blank">
@@ -59,8 +59,8 @@ export const Profil = () => {
                       </div>
                   </div>
               </div>
-              <div className="flex flex-col gap-10">
-                  <div className="flex flex-col lg:flex-row gap-2 text-xl">
+              <div className="flex flex-col gap-10 text-xl">
+                  <div className="flex flex-col lg:flex-row gap-2">
                       <p><span className="font-medium">Front end :</span> React • Tailwind • ThreeJS • NextJS • Angular</p>
                   </div>
                   <div className="flex flex-col lg:flex-row gap-2">
