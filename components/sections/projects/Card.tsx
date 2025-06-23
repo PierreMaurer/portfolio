@@ -92,10 +92,9 @@ export const Card = () => {
             <div className="containercards container m-0 p-0 box-border w-full h-full relative" ref={container}>
                 <section className="sticky-cards flex flex-col">
                     <div className="card-container">
-                        <div className="card">
+                        <a href="https://moist-botw.vercel.app/" target='_blank' className="card" >
                             <div className="tag ">
                                 <p>MOIST</p>
-                                <a href="https://moist-botw.vercel.app/" target="_blank"><p className="underline underline-offset-2">See the project</p></a>
                             </div>
                             <img
                                 src="/img/moist.png"
@@ -105,7 +104,7 @@ export const Card = () => {
                                 <p>Fictional project. Promo site for three summer canned drinks with a fresh, playful design for a young audience.</p>
                                 <p>Web Development • 3D</p>
                             </div>
-                        </div>
+                        </a>
                         <div className="card">
                             <div className="tag ">
                                 <p>TTA Manager</p>
@@ -119,10 +118,9 @@ export const Card = () => {
                                 <p>Web Design • Web Development • Backend</p>
                             </div>
                         </div>
-                        <div id="lavue" className="card">
+                        <a href="https://botw-lavue.vercel.app/" target="_blank" id="lavue" className="card">
                             <div className="tag">
                                 <p>Lavue</p>
-                                <a href="https://botw-lavue.vercel.app/" target="_blank"><p className="underline underline-offset-2">See the project</p></a>
                             </div>
                             <div className="videoPlayer">
                                 <video
@@ -140,7 +138,7 @@ export const Card = () => {
                                 <p className="w-[50%]">Fictional project created for a Brief of the Week. A premium fragrance launch website blending regional storytelling with a clean, elegant design.</p>
                                 <p>Web Design • Web Development • Mobile • Backend</p>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </section>
             </div>

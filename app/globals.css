@@ -27,6 +27,9 @@ body {
   scroll-behavior: smooth;
   scroll-timeline: --page-scroll block;
   animation: smooth-scroll 20s linear infinite;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 @keyframes smooth-scroll {
@@ -107,6 +110,7 @@ body {
   color: #fff;
   position: relative;
   width: 100vw;
+  box-sizing: border-box;
   height: 100svh;
   padding: 2em;
   background-color: #1C1C1C;
