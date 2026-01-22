@@ -105,19 +105,6 @@ export const Card = () => {
                                 <p>Web Development • 3D</p>
                             </div>
                         </a>
-                        <div className="card">
-                            <div className="tag ">
-                                <p>TTA Manager</p>
-                            </div>
-                            <img
-                                src="/img/ttamanger.png"
-                                alt="TTA Manager"
-                                className=""/>
-                            <div className="tagBottom">
-                                <p>TTA Manager is Web and mobile app to manage administrative task in fire station.</p>
-                                <p>Web Design • Web Development • Backend</p>
-                            </div>
-                        </div>
                         <a href="https://botw-lavue.vercel.app/" target="_blank" id="lavue" className="card">
                             <div className="tag">
                                 <p>Lavue</p>
@@ -137,6 +124,25 @@ export const Card = () => {
                             <div className="tagBottom">
                                 <p className="w-[50%]">Fictional project created for a Brief of the Week. A premium fragrance launch website blending regional storytelling with a clean, elegant design.</p>
                                 <p>Web Design • Web Development • Mobile • Backend</p>
+                            </div>
+                        </a>
+                        <a href="https://brief-of-week.vercel.app/" target="_blank" id="theorder" className="card">
+                            <div className="tag">
+                                <p>The Order</p>
+                            </div>
+                            <div className="videoPlayer overflow-hidden">
+                                <iframe
+                                    src="https://brief-of-week.vercel.app/"
+                                    className="absolute top-0 left-0 border-0 pointer-events-none"
+                                    style={{ width: 'calc(100% + 20px)', height: '100%' }}
+                                    title="The Order Preview"
+                                    loading="lazy"
+                                    scrolling="no"
+                                />
+                            </div>
+                            <div className="tagBottom">
+                                <p className="w-[50%]">Fictional project created for a Brief of the Week. A digital invitation for an exclusive NYE event, blending an air of mystery with a curated, high-end aesthetic.</p>
+                                <p>Web Design • 3D Integration</p>
                             </div>
                         </a>
                     </div>
