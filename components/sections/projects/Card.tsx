@@ -145,6 +145,25 @@ export const Card = () => {
                                 <p>Web Design • 3D Integration</p>
                             </div>
                         </a>
+                        <a href="https://botw-pulsation.vercel.app/" target="_blank" id="theorder" className="card">
+                            <div className="tag">
+                                <p>SYNC</p>
+                            </div>
+                            <div className="videoPlayer overflow-hidden">
+                                <iframe
+                                    src="https://botw-pulsation.vercel.app/"
+                                    className="absolute top-0 left-0 border-0 pointer-events-none"
+                                    style={{ width: 'calc(100% + 20px)', height: '100%' }}
+                                    title="The Order Preview"
+                                    loading="lazy"
+                                    scrolling="no"
+                                />
+                            </div>
+                            <div className="tagBottom">
+                                <p className="w-[50%]">Fictional project created for a Brief of the Week. An online digital platform for an urban dance studio, offering contemporary and hip-hop classes with a dynamic, high-contrast aesthetic inspired by rehearsal spaces.</p>
+                                <p>Web Design • UI/UX Prototyping</p>
+                            </div>
+                        </a>
                     </div>
                 </section>
             </div>
